@@ -1,0 +1,142 @@
+<resources xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="Base.Theme.NotesPro" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="bottomSheetDialogTheme">@style/AppBottomSheetDialogTheme</item>
+<!--        <item name="android:windowIsTranslucent">true</item>-->
+
+    </style>
+
+    <style name="Theme.NotesPro" parent="Base.Theme.NotesPro" />
+    
+    <style name="SplashTheme" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/bg_light</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/icon_anim</item>
+        <item name="windowSplashScreenAnimationDuration">1500</item>
+        <item name="postSplashScreenTheme">@style/Theme.NotesPro</item>
+    </style>
+
+
+    <!--    background theme-->
+    <style name="LayoutBackground" parent="Theme.NotesPro">
+        <item name="android:background">@drawable/snow_light</item>
+    </style>
+
+
+    <!--    searchbar theme-->
+    <style name="SearchBar" parent="Widget.AppCompat.SearchView">
+        <item name="android:backgroundTint">@color/searchbar_light</item>
+    </style>
+
+
+    <!--    fab theme-->
+    <style name="fabColors" parent="Widget.MaterialComponents.FloatingActionButton">
+        <item name="backgroundTint">@color/fab_bg_dark</item>
+        <item name="tint">@color/fab_icon_light</item>
+    </style>
+
+
+    <!--    note item theme-->
+    <style name="NoteItemBg" parent="Theme.NotesPro">
+        <!--used cardBackgroundColor instead of backgroundTint as it will remove the drop shadow-->
+        <item name="cardBackgroundColor">@color/note_item_bg_light</item>
+    </style>
+
+
+    <!--    back arrow theme-->
+    <style name="backArrow" parent="Theme.NotesPro">
+        <item name="tint">@color/black</item>
+    </style>
+
+
+    <!--    menu cardview button theme-->
+    <style name="menu" parent="Theme.NotesPro">
+        <item name="android:backgroundTint">@color/fab_bg_dark</item>
+    </style>
+
+
+    <!--    edit text theme-->
+    <style name="editTextBg" parent="Theme.NotesPro">
+        <item name="android:backgroundTint">@color/note_item_bg_light</item>
+        <item name="android:textColorHint">@color/text_hint_color_light</item>
+        <item name="android:textColor">@color/note_text_color_light</item>
+    </style>
+
+
+    <!--    text theme-->
+    <style name="textColor" parent="Theme.NotesPro">
+        <item name="android:textColor">@color/text_color_light</item>
+    </style>
+
+
+    <!--    note item text theme-->
+    <style name="noteItemTextColor" parent="Theme.NotesPro">
+        <item name="android:textColor">@color/note_text_color_light</item>
+    </style>
+
+
+    <!--    BOTTOM SHEET THEMES -->
+
+    <!--    view theme-->
+    <style name="viewColor" parent="Theme.NotesPro">
+        <item name="android:background">@color/icon_color_light</item>
+    </style>
+
+    <!--    icon theme-->
+    <style name="iconColor" parent="Theme.NotesPro">
+        <item name="tint">@color/icon_color_light</item>
+    </style>
+
+    <style name="AppBottomSheetDialogTheme" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/AppModalStyle</item>
+    </style>
+
+    <style name="AppModalStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/bottom_sheet_bg</item>
+    </style>
+
+    <!--    BOTTOM SHEET THEMES -->
+
+
+
+
+<!-- user detail layout bg   -->
+    <style name="DetailLayoutBackground" parent="Theme.NotesPro">
+        <item name="android:background">@color/bg_light</item>
+    </style>
+
+<!--    user detail text color-->
+    <style name="userDetailText" parent="Theme.NotesPro">
+        <item name="android:textColor">#606060</item>
+    </style>
+
+
+    <!--    num button bg color -->
+    <style name="numButtonBg" parent="Theme.NotesPro">
+        <item name="android:backgroundTint">@color/icon_color_dark</item>
+    </style>
+
+    <!--    app lock card bg -->
+    <style name="appLockCardBg" parent="Theme.NotesPro">
+        <item name="cardBackgroundColor">@color/bottom_sheet_bg_color</item>
+    </style>
+
+    <!--    app lock  bg -->
+    <style name="appLockBg" parent="Theme.NotesPro">
+        <item name="android:background">@color/lock_screen_top_color</item>
+    </style>
+
+    <!--    app lock icon theme-->
+    <style name="appLockIconColor" parent="Theme.NotesPro">
+        <item name="tint">@color/white</item>
+    </style>
+
+    <!--    lock icon in note item theme-->
+    <style name="lockIconInNoteItem" parent="Theme.NotesPro">
+        <item name="tint">@color/white</item>
+    </style>
+
+
+</resources>

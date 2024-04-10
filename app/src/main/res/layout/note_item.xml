@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/noteItem"
+    style="@style/NoteItemBg"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    app:cardElevation="0dp"
+    android:elevation="0dp"
+    app:cardCornerRadius="30dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:orientation="vertical">
+
+       <ImageView
+           android:id="@+id/imageView"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:visibility="gone"
+           android:adjustViewBounds="true"/>
+
+        <TextView
+            android:id="@+id/tvDate"
+            style="@style/noteItemTextColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="March 27, 2024 10:36:11"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            style="@style/noteItemTextColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_bold"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:text="Title"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tvNote"
+            style="@style/noteItemTextColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:maxLines="6"
+            android:ellipsize="end"
+            android:text="This is note content and i dont know what to do next but i am trying"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/lockIcon"
+            style="@style/lockIconInNoteItem"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/lock_icon"
+            android:layout_gravity="end"
+            android:layout_margin="20dp"
+            android:visibility="gone"/>
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

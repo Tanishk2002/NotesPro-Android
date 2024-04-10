@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/DetailLayoutBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Utilities.SettingsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/btnBack"
+            style="@style/backArrow"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/back_arrow" />
+
+    <TextView
+        style="@style/userDetailText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="13dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Settings"
+        android:textSize="30sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="App Lock"
+            android:textSize="25sp" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/btnSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="170dp"
+            android:layout_marginTop="18dp"
+            app:thumbTint="@drawable/thumb"
+            app:trackTint="@drawable/track" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btnApp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="Set App password"
+            android:textSize="25sp" />
+
+        <ImageView
+            style="@style/backArrow"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/arrow_forward" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btnNote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="Set Note password"
+            android:textSize="25sp" />
+
+        <ImageView
+            style="@style/backArrow"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/arrow_forward" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btnDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="Edit Details"
+            android:textSize="25sp" />
+
+        <ImageView
+            style="@style/backArrow"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="155dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/arrow_forward" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

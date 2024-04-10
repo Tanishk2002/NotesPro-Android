@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--    bottom sheet light color-->
+    <color name="bottom_sheet_bg_color">#231B4A</color>
+    <color name="border_color">@color/icon_color_dark</color>
+    <color name="applock_border_color">@color/icon_color_dark</color>
+
+    <!--    switch button colors -->
+    <color name="thumb_color_enabled">#D1B8FF</color>
+    <color name="thumb_color_disabled">#523FAE</color>
+    <color name="track_color_enabled">#A776FF</color>
+    <color name="track_color_disabled">#372A73</color>
+
+    <!--   dialog bg color -->
+    <color name="dialog_bg_color">@color/bg_dark</color>
+
+    <!--    lock screen top color -->
+    <color name="lock_screen_top_color">@color/bg_dark</color>
+
+</resources>

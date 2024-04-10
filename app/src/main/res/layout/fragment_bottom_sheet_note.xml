@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bottom_sheet_bg"
+    android:clipToOutline="true"
+    android:orientation="vertical"
+    tools:context=".BottomSheetMain">
+
+    <View
+        style="@style/viewColor"
+        android:layout_width="80dp"
+        android:layout_height="5dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp" />
+
+    <RelativeLayout
+        android:id="@+id/insertImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp">
+
+        <ImageView
+            style="@style/iconColor"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginHorizontal="30dp"
+            android:src="@drawable/insert_image_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="100dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="Insert Image"
+            android:textSize="25sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/saveNote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp">
+
+        <ImageView
+            style="@style/iconColor"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginHorizontal="30dp"
+            android:src="@drawable/save_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="100dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="Save Note"
+            android:textSize="25sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/deleteNote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp">
+
+        <ImageView
+            style="@style/iconColor"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginHorizontal="30dp"
+            android:src="@drawable/delete_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="100dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="Delete Note"
+            android:textSize="25sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/lockUnlockNote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp">
+
+        <ImageView
+            style="@style/iconColor"
+            android:id="@+id/lockUnlockIcon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginHorizontal="30dp"
+            android:src="@drawable/lock_icon" />
+
+        <TextView
+            android:id="@+id/lockUnlockText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="100dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="Lock Note"
+            android:textSize="25sp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

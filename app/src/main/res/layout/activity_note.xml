@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/LayoutBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/btnBack"
+            style="@style/backArrow"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/back_arrow" />
+
+        <ImageView
+            android:id="@+id/topLockUnlockIcon"
+            style="@style/iconColor"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/unlock_icon" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/btnMenu"
+            style="@style/menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="15dp"
+            app:cardCornerRadius="10dp">
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:padding="8dp"
+                android:src="@drawable/menu_icon" />
+
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="Last modified"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tvDate"
+                style="@style/textColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/montserrat_bold"
+                android:padding="10dp"
+                android:text="March 27, 2024"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/etTitle"
+                style="@style/editTextBg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@drawable/edit_text_bg"
+                android:fontFamily="@font/montserrat_bold"
+                android:hint="Title"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:textCursorDrawable="@null"
+                android:textSize="30sp" />
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginBottom="20dp"
+                android:visibility="gone"
+                android:adjustViewBounds="true"
+                app:riv_corner_radius="10dp"/>
+
+            <EditText
+                android:id="@+id/etContent"
+                style="@style/editTextBg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/edit_text_bg"
+                android:fontFamily="@font/montserrat_medium"
+                android:gravity="start"
+                android:hint="Start Note"
+                android:minHeight="580dp"
+                android:padding="10dp"
+                android:textCursorDrawable="@null"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
+

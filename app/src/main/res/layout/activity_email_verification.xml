@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/DetailLayoutBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Utilities.EmailVerificationActivity">
+
+    <TextView
+        style="@style/userDetailText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:gravity="center"
+        android:text="Verify that its you"
+        android:textSize="32sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:text="Please enter a 4 digit code sent to your email"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et1"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/et_bg"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:maxLines="1"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/et2"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/et_bg"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:maxLines="1"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/et3"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/et_bg"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:maxLines="1"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/et4"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/et_bg"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:maxLines="1"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnConfirm"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/fab_bg_dark"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="CONFIRM"
+        android:textColor="@color/white"
+        android:textSize="22sp" />
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:gravity="center"
+        android:text="Didn't receive email?"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/btnResend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:gravity="center"
+        android:text="Resend"
+        android:textColor="#858585"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="30"
+        android:textSize="18sp"
+        android:fontFamily="@font/montserrat_medium"
+        android:textStyle="bold"/>
+
+</LinearLayout>

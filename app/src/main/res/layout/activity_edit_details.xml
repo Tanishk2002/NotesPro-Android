@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/DetailLayoutBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Utilities.EditDetailsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp">
+
+        <ImageView
+            android:id="@+id/btnBack"
+            style="@style/backArrow"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/back_arrow" />
+
+        <TextView
+            style="@style/userDetailText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="13dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="Edit Details"
+            android:textSize="30sp" />
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/etFirstName"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="25dp"
+        android:background="@drawable/et_bg"
+        android:fontFamily="@font/montserrat_medium"
+        android:hint="First name"
+        android:inputType="text"
+        android:maxLines="1"
+        android:padding="15dp"
+        android:textSize="22sp" />
+
+    <EditText
+        android:id="@+id/etLastName"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="25dp"
+        android:background="@drawable/et_bg"
+        android:fontFamily="@font/montserrat_medium"
+        android:hint="Last name"
+        android:inputType="text"
+        android:maxLines="1"
+        android:padding="15dp"
+        android:textSize="22sp" />
+
+    <EditText
+        android:id="@+id/etDob"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="25dp"
+        android:background="@drawable/et_bg"
+        android:clickable="false"
+        android:focusable="false"
+        android:fontFamily="@font/montserrat_medium"
+        android:hint="Date of birth"
+        android:maxLines="1"
+        android:padding="15dp"
+        android:textSize="22sp" />
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="25dp"
+        android:background="@drawable/et_bg"
+        android:fontFamily="@font/montserrat_medium"
+        android:hint="Email"
+        android:inputType="text"
+        android:maxLines="1"
+        android:padding="15dp"
+        android:textSize="22sp" />
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:backgroundTint="@color/fab_bg_dark"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="NEXT"
+        android:textColor="@color/white"
+        android:textSize="22sp" />
+
+</LinearLayout>
