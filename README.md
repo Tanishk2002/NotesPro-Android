@@ -1,7 +1,7 @@
 
 # Notes Pro (Android App)
 
-A notes application built using Android Studio which runs on **Android 9** or higher.
+A notes application, built using Android Studio, which runs on **Android 9** or higher.
 
 
 ## App Look
