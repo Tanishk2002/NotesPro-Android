@@ -53,7 +53,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var noteAdapter: NoteAdapter
     private var bind: ActivityMainBinding? = null
     private var isLocked: Boolean = false
-    private var myQuery : String? = null
+    private var myQuery: String? = null
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -105,14 +105,14 @@ class MainActivity : AppCompatActivity() {
 
         noteViewModel.searchNote(searchQuery).observe(this) { list ->
             list.let {
-                if(!myQuery.isNullOrEmpty()) {
+                if (!myQuery.isNullOrEmpty()) {
                     Log.d("tagu", "query $query")
                     noteAdapter.differ.submitList(it)
                     Log.d("tagu", "searched notes")
                 }
             }
         }
-        if(myQuery.isNullOrEmpty())
+        if (myQuery.isNullOrEmpty())
             noteViewModel.getAllNotes().observe(this@MainActivity) { noteList ->
                 noteAdapter.differ.submitList(noteList)
                 Log.d("tagu", "all notes")
@@ -172,10 +172,14 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun editNote(selectedNote: Note) {
-        val intent = Intent(this, NoteActivity::class.java).apply {
-            putExtra(MyConstants.NOTE, selectedNote)
+        if (selectedNote.locked)
+            showPasswordDialog(false, true, selectedNote)
+        else {
+            val intent = Intent(this, NoteActivity::class.java).apply {
+                putExtra(MyConstants.NOTE, selectedNote)
+            }
+            startActivity(intent)
         }
-        startActivity(intent)
     }
 
     private fun deleteNote(selectedNote: Note) {
